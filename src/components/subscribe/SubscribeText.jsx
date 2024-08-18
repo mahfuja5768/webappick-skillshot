@@ -3,7 +3,7 @@ import SectionTitle from "../shared/SectionTitle";
 
 const SubscribeText = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-5">
       <SectionTitle
         firstPart={"Happy  "}
         spanText={"Chinese New Year "}

@@ -22,7 +22,7 @@ export default function SectionTitle({
       }`}
     >
       <h2
-        className={`text-4xl font-semibold text-primary ${
+        className={`text-4xl font-semibold text-darkTitle ${
           isCenter && "text-center"
         }`}
       >

@@ -8,7 +8,7 @@ const Courses = () => {
         <h2 className="text-4xl font-semibold text-white text-center">
           Popular courses of the week{" "}
         </h2>
-        <p className=" text-white leading-8 text-center w-1/2 mx-auto mt-3">
+        <p className=" text-white leading-8 text-center w-1/3 mx-auto mt-3">
           List of the most popular lists that are often studied by our members
         </p>
         <SliderCards />

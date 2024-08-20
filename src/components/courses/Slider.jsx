@@ -1,11 +1,11 @@
 import Slider from "react-slick";
-import data from "../../utils/data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { getImgUrl } from "../../utils/getImagePath";
 import Button from "../shared/Button";
+import { courseData } from "../../utils/data";
 
-const courses = data;
+const courses = courseData;
 // console.log(courses);
 
 const NextArrow = (props) => {

@@ -1,4 +1,4 @@
-const data = [
+export const courseData = [
   {
     title: "Basics of learning team management",
     instructor: "cPerson1.png",
@@ -55,4 +55,53 @@ const data = [
   },
 ];
 
-export default data;
+export const priceData = {
+  plans: [
+    {
+      title: "Base",
+      price: "$50",
+      duration: "1 month",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      features: [
+        "Access all videos",
+        "Get Certificate",
+        "Chat support",
+        "Update Notification",
+        "Download material",
+      ],
+      cta: "Choose plan",
+    },
+    {
+      title: "Pro",
+      price: "$100",
+      duration: "6 months",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      features: [
+        "Access all videos",
+        "Get Certificate",
+        "Chat support",
+        "Update Notification",
+        "Download material",
+      ],
+      cta: "Choose plan",
+      label: "Most Popular",
+    },
+    {
+      title: "Enterprise",
+      price: "$200",
+      duration: "12 months",
+      description:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      features: [
+        "Access all videos",
+        "Get Certificate",
+        "Chat support",
+        "Update Notification",
+        "Download material",
+      ],
+      cta: "Choose plan",
+    },
+  ],
+};

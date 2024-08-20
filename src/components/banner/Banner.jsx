@@ -4,7 +4,7 @@ import BannerText from "./BannerText";
 
 const Banner = () => {
   return (
-    <div className="bg-primary mb-16">
+    <div className="bg-primary mb-16 mt-12">
       <Container>
         <div className="grid grid-cols-2 justify-between items-end">
           <BannerText />

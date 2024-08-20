@@ -105,3 +105,36 @@ export const priceData = {
     },
   ],
 };
+
+export const clientData = {
+  infos: [
+    {
+      id: 1,
+      name: "Jason Bay",
+      img: "client1.png",
+      description:
+        "I am quite satisfied, because the skills I want or dream of can really be mastered",
+    },
+    {
+      id: 2,
+      name: "Nany Brugman",
+      img: "client2.png",
+      description:
+        "I am quite satisfied, because the skills I want or dream of can really be mastered",
+    },
+    {
+      id: 3,
+      name: "Alexa Nowan",
+      img: "client3.png",
+      description:
+        "I am quite satisfied, because the skills I want or dream of can really be mastered",
+    },
+    {
+      id: 4,
+      name: "Nancy",
+      img: "client2.png",
+      description:
+        "I am quite satisfied, because the skills I want or dream of can really be mastered",
+    },
+  ],
+};

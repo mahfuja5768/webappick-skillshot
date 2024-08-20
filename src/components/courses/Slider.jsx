@@ -13,7 +13,12 @@ const NextArrow = (props) => {
   return (
     <div
       className={`${className} custom-arrow right-arrow`}
-      style={{ ...style, display: "block" }}
+      style={{
+        ...style,
+        display: "block",
+        backgroundColor: "green",
+        borderRadius: "50%",
+      }}
       onClick={onClick}
     ></div>
   );
@@ -24,7 +29,12 @@ const PrevArrow = (props) => {
   return (
     <div
       className={`${className} custom-arrow left-arrow`}
-      style={{ ...style, display: "block" }}
+      style={{
+        ...style,
+        display: "block",
+        backgroundColor: "green",
+        borderRadius: "50%",
+      }}
       onClick={onClick}
     ></div>
   );

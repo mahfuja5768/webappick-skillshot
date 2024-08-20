@@ -3,7 +3,10 @@ import SliderCards from "./Slider";
 
 const Courses = () => {
   return (
-    <div className="my-12 bg-primary py-20 flex justify-center items-center">
+    <div
+      id="course"
+      className="my-12 bg-primary py-20 flex justify-center items-center"
+    >
       <Container>
         <h2 className="text-4xl font-semibold text-white text-center">
           Popular courses of the week{" "}

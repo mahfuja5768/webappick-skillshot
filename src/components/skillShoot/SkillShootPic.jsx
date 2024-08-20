@@ -23,7 +23,7 @@ const SkillShootPic = () => {
         src={getImgUrl("bannerPerson.png")}
         alt="bannerPerson"
       />
-      <div className="bg-white/70 px-4 py-3 rounded-xl z-50 absolute bottom-12 right-0 flex justify-between gap-3">
+      <div className="bg-white/70 px-4 py-3 rounded-xl z-10 absolute bottom-12 right-0 flex justify-between gap-3">
         <img className="w-10 h-10" src={getImgUrl("client.png")} alt="client" />
         <div>
           <h4 className="text-xs font-semibold">Learn basic ui ux design</h4>

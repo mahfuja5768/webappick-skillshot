@@ -2,12 +2,12 @@ import { getImgUrl } from "../../utils/getImagePath";
 
 const BannerText = () => {
   return (
-    <div className="flex flex-col gap-6 relative py-[50px] ">
+    <div className="flex flex-col gap-6 relative py-[130px] ">
       <h2 className="lg:text-6xl md:text-4xl text-3xl text-white font-semibold leading-relaxed text-center lg:text-start">
         There is always something new for us to learn
       </h2>
       <img
-        className="absolute right-0 lg:right-44 top-24 lg:top-32"
+        className="absolute right-0 lg:right-44 top-24 lg:top-44"
         src={getImgUrl("title-line.png")}
         alt="title-line"
       />
@@ -15,7 +15,7 @@ const BannerText = () => {
         we have created more than 100+ materials on various things that will
         help your career, with mentors who are experienced in their fields.
       </p>
-      <div className="flex flex-col lg:flow-row items-center gap-4">
+      <div className="flex flex-col lg:flex-row items-center gap-4">
         <button
           onClick={onclick}
           className="flex justify-center items-center gap-3

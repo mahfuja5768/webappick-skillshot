@@ -47,7 +47,7 @@ export default function Header() {
           <img className="" src={getImgUrl("Logo.png")} alt="logo.png" />
         </a>
         <div className="flex justify-between items-center gap-5">
-          <ul className="gap-6 lg:flex hidden text-lg font-medium text-primary">
+          <ul className="gap-6 lg:flex hidden text-lg text-primary">
             {navs.map((item, idx) => (
               <li
                 key={idx}

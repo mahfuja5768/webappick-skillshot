@@ -2,7 +2,7 @@ import { getImgUrl } from "../../utils/getImagePath";
 
 const BannerPic = () => {
   return (
-    <div className="relative flex justify-center items-center">
+    <div className="hidden relative lg:flex justify-center items-center">
       <img
         className="absolute right-4 top-52"
         src={getImgUrl("bannerPlay.png")}

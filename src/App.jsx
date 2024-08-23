@@ -10,7 +10,6 @@ import SkillShoot from "./components/skillShoot/SkillShoot";
 import Subscribe from "./components/subscribe/Subscribe";
 import WhyExist from "./components/whyExist/WhyExist";
 
-//TODO: add play pic in slider
 
 const App = () => {
   return (

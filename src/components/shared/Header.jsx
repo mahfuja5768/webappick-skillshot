@@ -8,21 +8,19 @@ export default function Header() {
   const [activeNav, setActiveNav] = useState("Home");
 
   const navs = [
-    { nav: "Home", path: "home" },
+    { nav: "Home", path: "#" },
     { nav: "Course", path: "course" },
     { nav: "Subscribe", path: "subscribe" },
     { nav: "About", path: "about" },
     { nav: "Testimoni", path: "testimoni" },
   ];
 
-  // Function to scroll to a section smoothly
   const handleScroll = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     setActiveNav(sectionId);
-    setShowNav(false); // Close the mobile menu after clicking
+    setShowNav(false);
   };
 
-  // Effect to handle active nav based on scroll position
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY + window.innerHeight / 2;
@@ -44,7 +42,7 @@ export default function Header() {
 
   return (
     <div className="fixed top-0 left-0 w-full bg-primary h-24 lg:h-24 z-50">
-      <nav className="max-w-[1280px] mx-auto px-4 flex items-center justify-between gap-5">
+      <nav className="max-w-[1280px] mx-auto px-4 pt-4 flex items-center justify-between gap-5">
         <a href="#">
           <img className="" src={getImgUrl("Logo.png")} alt="logo.png" />
         </a>
@@ -107,12 +105,10 @@ export default function Header() {
             </ul>
           </div>
           <div className="items-center gap-6 lg:hidden flex flex-col mt-12">
-            <ul className="flex items-center gap-6">
-              <li className="text-lg font-medium hover:text-opacity-20 cursor-pointer">
-                Contact Us
-              </li>
+            <ul className="flex items-center gap-6 text-lg font-medium text-primary">
+              <li className="text-white duration-300 cursor-pointer">Login</li>
             </ul>
-            <Button inWhite text="Sign up free →" />
+            <Button isOrange text="Register" />
           </div>
         </nav>
       )}

@@ -22,13 +22,13 @@ export default function SectionTitle({
       }`}
     >
       <h2
-        className={`text-4xl font-semibold text-darkTitle ${
+        className={`text-lg md:text-4xl font-semibold text-darkTitle text-center lg:text-start ${
           isCenter && "text-center"
         }`}
       >
         {firstPart}
         {spanText && (
-          <span className="text-4xl font-semibold text-secondary">
+          <span className="text-lg md:text-4xl font-semibold text-secondary">
             {spanText}
           </span>
         )}

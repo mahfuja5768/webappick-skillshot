@@ -2,7 +2,7 @@ import { getImgUrl } from "../../utils/getImagePath";
 
 const SubscribePic = () => {
    return (
-     <div className="-mt-40 relative flex justify-center items-center">
+     <div className="hidden -mt-40 relative lg:flex justify-center items-center">
        <img
          className="absolute right-4 top-52"
          src={getImgUrl("dis-obj3.png")}

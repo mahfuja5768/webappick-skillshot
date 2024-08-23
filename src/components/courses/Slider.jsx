@@ -53,14 +53,14 @@ const SliderCards = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 400,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -71,21 +71,23 @@ const SliderCards = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto">
+    <div className="relative lg:w-full w-[276px] mt-5 mx-auto">
       <Slider {...settings}>
         {courses?.map((course, index) => (
           <div key={index} className="px-4 py-6">
-            <div className="bg-white h-[527px] rounded-2xl shadow-lg">
+            <div className="bg-white lg:h-[527px] rounded-2xl shadow-lg">
               <img
                 src={getImgUrl(course?.image)}
                 alt={course?.title}
-                className="w-full  object-cover rounded-t-2xl mb-4"
+                className="lg:w-full lg:object-cover rounded-t-2xl mb-4"
               />
               <div
                 className="py-4 px-5 flex flex-col gap-5
               "
               >
-                <h3 className="text-2xl font-semibold mb-2">{course?.title}</h3>
+                <h3 className="text-sm lg:text-2xl font-semibold mb-2">
+                  {course?.title}
+                </h3>
 
                 <div
                   className="grid grid-cols-2 gap-5 justify-between items-center
@@ -94,23 +96,33 @@ const SliderCards = () => {
                 >
                   <div className="flex items-center gap-3">
                     <img
+                      className="w-[30px] h-[30px]"
                       src={getImgUrl(course?.instructor)}
                       alt="existPerson"
                     />
                     <div>
-                      <h4 className="text-sm font-medium text-darkTitle">
+                      <h4 className="text-[10px] lg:text-sm font-medium text-darkTitle">
                         {course?.instructor}
                       </h4>
-                      <p className=" text-[10px]">{course?.role}</p>
+                      <p className="text-[7px] lg:text-[10px]">
+                        {course?.role}
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <img src={getImgUrl("person.png")} alt="person" />
+                    <img
+                      className="w-[23px] h-[23px]"
+                      src={getImgUrl("person.png")}
+                      alt="person"
+                    />
                     <div>
-                      <h4 className="font-medium text-darkTitle">
+                      <h4
+                        className="text-base
+                        text-[10px] font-medium text-darkTitle"
+                      >
                         {course?.participants}
                       </h4>
-                      <p className=" text-[10px]">Participants</p>
+                      <p className="text-[8px] lg:text-[10px]">Participants</p>
                     </div>
                   </div>
                 </div>
@@ -123,10 +135,12 @@ const SliderCards = () => {
                     <Button text={"Buy Now"} />
                   </div>
                   <div className="flex items-center">
-                    <h2 className="text-4xl font-semibold text-darkTitle">
+                    <h2 className="text-base lg:text-4xl font-semibold text-darkTitle">
                       $120
                     </h2>
-                    <p className="text-textLight text-xs mt-3">/25 Video</p>
+                    <p className="text-textLight text-[8px] lg:text-xs mt-3">
+                      /25 Video
+                    </p>
                   </div>
                 </div>
               </div>

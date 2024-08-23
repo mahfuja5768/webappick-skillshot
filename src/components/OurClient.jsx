@@ -16,10 +16,6 @@ const NextArrow = (props) => {
         display: "block",
         backgroundColor: "green",
         borderRadius: "50%",
-        position: "absolute",
-        top: 0,
-        left: 0,
-        right: 0,
       }}
       onClick={onClick}
     ></div>
@@ -74,18 +70,14 @@ const OurClient = () => {
   };
 
   return (
-    <div
-      id="
-    testimoni"
-      className="bg-[#F8F8F8] py-20"
-    >
+    <div id="testimoni" className="bg-[#F8F8F8] py-20">
       <Container>
-        <SectionTitle isCenter firstPart="What do they" spanText="say?" />
-        <p className="text-gray-500 leading-10 text-center w-1/2 mx-auto mt-3">
+        <SectionTitle isCenter firstPart="What do they" spanText=" say?" />
+        <p className="text-gray-500 leading-10 text-center lg:w-1/2 mx-auto mt-3">
           This is an honest review from members who have joined us
         </p>
 
-        <div className="relative w-full mx-auto mt-10">
+        <div className="px-3 relative w-full mx-auto mt-10">
           <Slider {...settings}>
             {clientInfo?.map((info, index) => (
               <div key={index} className="px-4 py-6">
@@ -94,17 +86,17 @@ const OurClient = () => {
                     src={getImgUrl(info?.img)}
                     alt={info?.name}
                     className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+                  />{" "}
+                  <img
+                    src={getImgUrl("stars.png")}
+                    alt="Rating stars"
+                    className="mx-auto mb-4"
                   />
                   <div className="text-center">
-                    <h4 className="text-2xl font-semibold mb-2">
+                    <h4 className="text-lg lg:text-2xl mb-2">
                       {info?.name}
                     </h4>
-                    <p className="text-gray-500 mb-4">{info?.description}</p>
-                    <img
-                      src={getImgUrl("stars.png")}
-                      alt="Rating stars"
-                      className="mx-auto mb-4"
-                    />
+                    <p className="text-gray-500 mb-4 leading-10">{info?.description}</p>
                   </div>
                 </div>
               </div>

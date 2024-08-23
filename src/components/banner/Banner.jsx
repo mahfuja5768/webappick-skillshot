@@ -6,9 +6,10 @@ const Banner = () => {
   return (
     <div className="bg-primary mb-16 mt-12">
       <Container>
-        <div className="grid grid-cols-2 justify-between items-end">
+        <div className="grid lg:grid-cols-2 justify-between items-end">
           <BannerText />
-        <BannerPic /></div>
+          <BannerPic />
+        </div>
       </Container>
     </div>
   );

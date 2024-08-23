@@ -6,7 +6,7 @@ export const courseData = [
     participants: 120,
     price: "$120",
     videos: 25,
-    image: "c1.png",
+    image: "c1.png"
   },
   {
     title: "Learn basic database structure",

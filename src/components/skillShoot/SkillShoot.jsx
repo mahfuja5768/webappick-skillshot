@@ -5,7 +5,7 @@ import SkillShootTexts from "./SkillShootTexts";
 const SkillShoot = () => {
   return (
     <Container>
-      <div className="grid grid-cols-5 justify-between gap-10 items-center my-20 px-2">
+      <div className="grid lg:grid-cols-5 justify-between gap-10 items-center my-20 px-2">
         <SkillShootPic />
         <SkillShootTexts />
       </div>

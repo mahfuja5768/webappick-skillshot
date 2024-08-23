@@ -14,15 +14,15 @@ const PricingCards = () => {
           spanText={"Subscribe"}
           secondPart={" with us now "}
         />
-        <p className="text-gray-500 leading-10 text-center w-1/2 mx-auto mt-3">
+        <p className="text-gray-500 leading-10 text-center lg:w-1/2 mx-auto mt-3">
           By subscribing now, you will be able to access the material easily and
           cheaply, so you will be very efficient and benefit.
         </p>
 
         <div
-          className="grid grid-cols-3
+          className="grid grid-cols-1 lg:grid-cols-3
       gap-4
-      mt-12 space-x-6 mb-20"
+      mt-12 space-x-6 mb-12 lg:mb-20"
         >
           {pricingData?.plans?.map((plan, index) => (
             <div
